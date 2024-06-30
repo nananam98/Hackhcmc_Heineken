@@ -1,7 +1,7 @@
 # Automate Images Analyzer
 
 <div>
-    <a href="https://colab.research.google.com/drive/17n56q6Aa2oPyyT5lNjJXEjujUamLvG8a?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+    <a href="https://colab.research.google.com/drive/1_-MDGg3LWcWmeaQWYuzFBXlmTNrBUBWX?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
   </div>
 
 ## Introduction
@@ -16,7 +16,7 @@ This project is designed to recognize beer brands from images using Object Detec
 ## Requirements
 - Python 3.x
 - Streamlit
-- PaddleOCR
+- EasyOCR
 - OpenCV
 - Transformers
 - Groq
@@ -29,7 +29,7 @@ This project is designed to recognize beer brands from images using Object Detec
 ## Installation
 1. Install required Python packages:
     ```sh
-    pip install opencv-python transformers groq python-Levenshtein streamlit numpy paddlepaddle paddleocr
+    pip install opencv-python transformers groq python-Levenshtein streamlit numpy easyocr
     ```
 2. Install Localtunnel:
     ```sh
@@ -64,7 +64,7 @@ This project is designed to recognize beer brands from images using Object Detec
 
 ## Image Analysis
 The project performs the following steps to analyze the images:
-1. **OCR with PaddleOCR**: Detects and extracts text from images.
+1. **OCR with EasyOCR**: Detects and extracts text from images.
 2. **Image Captioning**: Generates captions for the images using the Salesforce BLIP model.
 3. **Person Detection**: Uses Faster R-CNN model to detect people in the images.
 4. **Brand Recognition**: Filters recognized texts to identify beer brands based on predefined keywords.
@@ -84,7 +84,3 @@ Upload a zip file with images and let the app process them. The app will classif
 - Vu Van Nam
 - Tao Duc Minh
 - Thai Gia Huy
-
-## License
-This project is licensed under the MIT License.
-
