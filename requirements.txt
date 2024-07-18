@@ -1,0 +1,6 @@
+transformers
+groq
+easyocr
+python-Levenshtein
+streamlit
+numpy
